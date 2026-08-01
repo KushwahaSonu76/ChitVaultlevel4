@@ -1,0 +1,11 @@
+node_modules/
+target/
+target_temp/
+.env
+.env.local
+.env.production
+.DS_Store
+dist/
+.vite/
+scripts/
+
