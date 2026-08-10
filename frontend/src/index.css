@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+
+@theme {
+  --color-stellar: #F5F3FF;
+  --color-accent: #6366F1;
+}
+
+:root {
+  --base-bg: #080510;
+  --card-bg: #140E28;
+  --starlight-text: #F5F3FF;
+  --muted-slate: #8B85A7;
+  --highlight-start: #6366F1;
+  --highlight-end: #A855F7;
+  --accent-glow: #C084FC;
+}
+
+body {
+  background-color: var(--base-bg);
+  color: var(--starlight-text);
+  font-family: 'Outfit', 'Inter', sans-serif;
+}
+
+/* Global Dark Theme Overrides for Premium Aesthetic */
+.bg-slate-50, .min-h-screen {
+  background-color: var(--base-bg) !important;
+}
+
+.bg-white {
+  background-color: var(--card-bg) !important;
+  border-color: #241A45 !important;
+}
+
+.border-gray-100, .border-gray-200, .border-gray-300 {
+  border-color: #241A45 !important;
+}
+
+.text-gray-900, .text-gray-800, .text-gray-700, .text-stellar {
+  color: var(--starlight-text) !important;
+}
+
+.text-gray-600, .text-gray-500 {
+  color: var(--muted-slate) !important;
+}
+
+.bg-gray-50, .bg-gray-100 {
+  background-color: #1c1538 !important;
+}
+
+.hover\:bg-gray-100:hover {
+  background-color: #281e52 !important;
+}
+
+.hover\:bg-gray-200:hover {
+  background-color: #312564 !important;
+}
+
+/* Premium Gradient buttons and backgrounds */
+.bg-accent {
+  background: linear-gradient(135deg, var(--highlight-start) 0%, var(--highlight-end) 100%) !important;
+  border: none !important;
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+  transition: all 0.3s ease;
+}
+
+.bg-accent:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0 25px rgba(192, 132, 252, 0.6);
+}
+
+.text-accent {
+  color: var(--accent-glow) !important;
+}
+
+/* Custom Scrollbar for Premium Feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--base-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #241A45;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--highlight-start);
+}
